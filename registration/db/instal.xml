@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMLDB PATH="local/registration/db" VERSION="2024072400" COMMENT="XMLDB file for local_registration">
+    <TABLE NAME="local_registration_temp" COMMENT="Temporary storage for user registration">
+        <FIELDS>
+            <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+            <FIELD NAME="email" TYPE="char" LENGTH="100" NOTNULL="true"/>
+            <FIELD NAME="name" TYPE="char" LENGTH="100" NOTNULL="true"/>
+            <FIELD NAME="surname" TYPE="char" LENGTH="100" NOTNULL="true"/>
+            <FIELD NAME="country" TYPE="char" LENGTH="2" NOTNULL="true"/>
+            <FIELD NAME="mobile" TYPE="char" LENGTH="15" NOTNULL="true"/>
+            <FIELD NAME="temp_password" TYPE="char" LENGTH="100" NOTNULL="true"/>
+            <FIELD NAME="verified" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0"/>
+        </FIELDS>
+        <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        </KEYS>
+    </TABLE>
+</XMLDB>
